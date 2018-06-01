@@ -5,7 +5,7 @@ import './Display.css';
   return (
     <React.Fragment>
       <input 
-        className='display form-control w-100 m-1'
+        className={'display form-control w-100 m-1 '+ (props.height ? 'display-top' : 'display-bottom')}
         type='text' 
         value={props.value}
         readOnly />
